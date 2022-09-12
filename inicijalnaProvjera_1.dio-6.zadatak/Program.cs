@@ -12,17 +12,20 @@ namespace inicijalnaProvjera_1.dio_6.zadatak
         {
             int brClanova;
             double suma=0;
+            double br = 1;
 
             Console.WriteLine("Unesi broj članova reda: ");
             brClanova =Convert.ToInt32(Console.ReadLine());
 
-            for(int i = 1; i < brClanova; i++)
+            for(int i = 0; i < brClanova; i++)
             {
-                suma = suma+1 / (3 * i);
+                br = br * 3;
+                suma = suma+(1 /br);
             }
 
             Console.WriteLine(suma);
             Console.ReadKey();
+
 
         }
     }
